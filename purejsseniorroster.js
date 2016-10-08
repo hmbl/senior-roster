@@ -53,7 +53,7 @@ allStaff[i].homeTime = new Date();
 j = j + 1;//incrememt case 
 
 switch (j) {
-    case 1:;
+    case 1:
     	allStaff[i].startTime.setHours(10,0,0);
         break;
     case 2:
