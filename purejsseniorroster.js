@@ -1,8 +1,3 @@
-//Show array of data on code
-//Assign dates to times and 
-//
-//
-
 console.log("Welcome to Senior Roster - by Henry Lawrence");
 console.log("Functions: statusOnHour(hour), breakTime(name,breakNo) , calledSick(name); calledSickList(), displayHelp()"); 
 console.log("Available names: Linda, Kim, John, Ava, Clark, Robyn, Courtney, Leah, Byron, Marlon");
@@ -20,7 +15,6 @@ var allStaff = [{firstName:"Linda", lastName:"Stephenson", ident:"332",isWorking
                {firstName:"Byron", lastName:"Read", ident:"194",isWorking:true, startTime:startTime9, firstBreak:"", secondBreak:"", thirdBreak:"",homeTime:"",currentBreak:"", totalHours:totalHourShift9}, 
                {firstName:"Marlon", lastName:"Hardy", ident:"112",isWorking:true, startTime:startTime10, firstBreak:"", secondBreak:"", thirdBreak:"",homeTime:"",currentBreak:"", totalHours:totalHourShift10}];
 
-// {firstName:"Henry",lastName:"Lawrence",ident:"332",startShift="11",endShift="7.5",breaks:"3",isWorking:"true"}
 
 //startTimes
 var startTime1 = new Date();startTime1.setHours(10,0,0);
@@ -35,38 +29,17 @@ var startTime9 = new Date();startTime9.setHours(17,0,0);
 var startTime10 = new Date();startTime10.setHours(17,30,0);
 var totalHourShift1 = 8; 
 var totalHourShift2 = 8; 
-var totalHourShift3 = 8; 
-var totalHourShift4 = 8; 
+var totalHourShift3 = 8; var totalHourShift4 = 8; 
 var totalHourShift5 = 8; 
 var totalHourShift6 = 8; 	
 var totalHourShift7 = 5; 
 var totalHourShift8 = 4; 
 var totalHourShift9 = 4; 
-var totalHourShift10 = 4;  
-
-// // var startTimeHenry = new Date();
-// var firstBreakHenry = new Date();
-// var secondBreakHenry = new Date();
-// var thirdBreakHenry = new Date();
-// var homeTimeHenry = new Date();
-// startTimeHenry.setHours(10,0,0);
-// firstBreakHenry.setHours(startTimeHenry.getHours()+2,0,0);
-// secondBreakHenry.setHours(firstBreakHenry.getHours()+2,30,0);
-// thirdBreakHenry.setHours(secondBreakHenry.getHours()+3,00,0);
-// homeTimeHenry.setHours(startTimeHenry.getHours() + 8,30,0);
-
-
-// firstBreakHenry = firstBreakHenry.setHours(firstBreakHenry.getHours() - 1);
-// var firstBreakHenry = startTimeHenry.setHours(startTimeHenry.getHours() + 1); 
-// var firstBreakHenry = startTimeHenry.setHours(startTimeHenry.getHours() + 1); 
-
-
-
+var totalHourShift10 = 4; 
 
 var notes = "Other: \n";
 var j = 0;
-// take array details startTime firstBreak secondBreak thirdBreak homeTime
-// make them equal to calculations made my 'new dates'.
+
 for(i = 0;i< allStaff.length; i++){
 
 //init all times as dates
@@ -80,79 +53,45 @@ allStaff[i].homeTime = new Date();
 j = j + 1;//incrememt case 
 
 switch (j) {
-    case 1:
-    	// allStaff[i].startTime=new Date();
+    case 1:;
     	allStaff[i].startTime.setHours(10,0,0);
-       // var startTime1 = new Date();startTime1.setHours(10,0,0);
         break;
     case 2:
     allStaff[i].startTime.setHours(11,0,0);
-        // var startTime2 = new Date();startTime2.setHours(11,0,0);
         break;
     case 3:
     allStaff[i].startTime.setHours(12,30,0);
-        // var startTime3 = new Date();startTime3.setHours(12,30,0);
         break;
     case 4:
     allStaff[i].startTime.setHours(13,0,0);
-        // var startTime4 = new Date();startTime4.setHours(13,0,0);
         break;
     case 5:
     allStaff[i].startTime.setHours(13,0,0);
-        // var startTime5 = new Date();startTime5.setHours(13,0,0);
         break;
     case  6:
     allStaff[i].startTime.setHours(13,30,0);
-        // var startTime6 = new Date();startTime6.setHours(13,30,0);
        break;
     case  7:
     allStaff[i].startTime.setHours(14,30,0);
-        // var startTime7 = new Date();startTime7.setHours(16,0,0);
        break;
     case  8:
     allStaff[i].startTime.setHours(14,30,0);
-       // var startTime8 = new Date();startTime8.setHours(16,0,0);
        break;
     case  9:
-    allStaff[i].startTime.setHours(14,30,0);
-    // console.log(allStaff[i].firstName +" starts at "+ allStaff[i].startTime);
-       // var startTime9 = new Date();startTime9.setHours(17,0,0);       
+    allStaff[i].startTime.setHours(14,30,0);   
        break;
     case  10:
-    allStaff[i].startTime.setHours(14,00,0);
-       // var startTime10 = new Date();startTime10.setHours(17,30,0);    
+    allStaff[i].startTime.setHours(14,00,0);   
        break;
 }
-// console.log(allStaff[i].firstName +" starts at "+ allStaff[i].startTime.toLocaleTimeString());
-//
 
 allStaff[i].firstBreak.setHours(allStaff[i].startTime.getHours()+2,0,0);
 allStaff[i].secondBreak.setHours(allStaff[i].firstBreak.getHours()+2,00,0);
 allStaff[i].thirdBreak.setHours(allStaff[i].secondBreak.getHours()+2,30,0);
 allStaff[i].homeTime.setHours(allStaff[i].thirdBreak.getHours() + 1,30,0);
 
-
-// console.log(allStaff[i].firstName +" starts at "+ allStaff[i].startTime.toLocaleTimeString());
-// console.log(allStaff[i].firstName +" first break at "+ allStaff[i].firstBreak.toLocaleTimeString());
-// console.log(allStaff[i].firstName +" second break at "+ allStaff[i].secondBreak.toLocaleTimeString());
-// console.log(allStaff[i].firstName +" third break at "+ allStaff[i].thirdBreak.toLocaleTimeString());
-// console.log(allStaff[i].firstName +" is going home at "+ allStaff[i].homeTime.toLocaleTimeString());
-
-// allStaff[i].firstBreak.setHours(allStaff[i].startTime.getHours()+2,0,0);
-// allStaff[i].secondBreak.setHours(allStaff[i].firstBreak.getHours()+2,30,0);
-// allStaff[i].thirdBreak.setHours(allStaff[i].secondBreak.getHours()+3,00,0);
-// allStaff[i].homeTime.setHours(allStaff[i].thirdBreak.getHours() + 1,30,0);
-
-// console.log(allStaff[i].firstName +" starts at "+ allStaff[i].startTime.toLocaleTimeString());
-// console.log(allStaff[i].firstName +" first break at "+ allStaff[i].firstBreak.toLocaleTimeString());
-// console.log(allStaff[i].firstName +" second break at "+ allStaff[i].secondBreak.toLocaleTimeString());
-// console.log(allStaff[i].firstName +" third break at "+ allStaff[i].thirdBreak.toLocaleTimeString());
-// console.log(allStaff[i].firstName +" is going home at "+ allStaff[i].homeTime.toLocaleTimeString());
-
-
-} //end  forloop
+}
 function statusOnHour(hour){
-	// console.log("Information for "+ hour +" o'Clock");
 
 	// Starting times increment
 	for (i = 0; i<allStaff.length;i++) {
@@ -201,12 +140,8 @@ function statusOnHour(hour){
 		if(breakti4.getHours() === hour){
 			console.log(allStaff[i].firstName+" is going home!");
 			console.log("... they finish their shift at "+allStaff[i].homeTime.toLocaleTimeString());
-
 		}
 	}
-
-
-
 	console.log(notes);
 	for (var i = 0; i < allStaff[i].length; i++) {
 		if(allStaff[i].currentBreak.getHour() === hour){
@@ -215,14 +150,13 @@ function statusOnHour(hour){
 	}
 }
 
-
 function breakTime(name,n){
 var time =new Date(); time = time.toLocaleTimeString();
 var fifteen = new Date(); fifteen.setHours(fifteen.getHours() + 0,fifteen.getMinutes()+15,0);
 var half = new Date();    half.setHours(half.getHours() + 0,half.getMinutes()+30,0);
 
 	console.log("Breaktime for "+name);
-	if(n === 1|| n === 3){
+	if(n === 1|| n === 3){ //if break is the first, (15) or last (15)
 		console.log("Please return at "+fifteen.toLocaleTimeString());
 		var tscript = name +" went for a fifteen break at "+time +"\n they will return at "+fifteen.toLocaleTimeString();
 		notes = notes + tscript+"\n";
@@ -232,10 +166,10 @@ var half = new Date();    half.setHours(half.getHours() + 0,half.getMinutes()+30
 			}
 		}
 	}
-	else{
+	else{//if break is 2nd, (30 minutes)
 		console.log("Please return at "+half.toLocaleTimeString());
 		var tscript = name +" went for a half break at "+time +"\n they will return at "+half.toLocaleTimeString();
-		notes = notes + tscript +"\n";
+		notes = notes + tscript +"\n"; //add data to notes
 		for ( i = 0; i < allStaff[i].length; i++) {
 			if(allStaff[i].firstName === name){
 				allStaff[i].currentBreak = half.toLocaleTimeString();
@@ -246,32 +180,15 @@ var half = new Date();    half.setHours(half.getHours() + 0,half.getMinutes()+30
 function calledSick(name){
 	for (i = 0; i < allStaff.length; i++) {
 			if(allStaff[i].firstName === name ){
-				// console.log(allStaff[i].isWorking+", "+allStaff[i].firstName+" is working");
 				allStaff[i].isWorking = false;
 				console.log(name+" called in sick.");
 					return;
 			}
-
-		// console.log(allStaff[i].isWorking+", "+allStaff[i].firstName+" is working");
 	}
 
 			console.log("Staff not found");
 
 }
-// function calledSick(name){
-// 	for (i = 0; i < allStaff.length; i++) {
-// 			if(allStaff[i].firstName = name){
-// 				allStaff[i].isWorking = false;
-// 			}
-// 			else {
-// 				console.log(name+" isn't working today.");
-				
-// 			}
-// 				console.log(name+" called in sick.");
-// 				break;
-// 		}
-		
-// }
 function calledSickList(){
 	for ( i = 0; i < allStaff.length; i++ ) {
 			if(allStaff[i].isWorking === false){
