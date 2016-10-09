@@ -15,18 +15,6 @@ var allStaff = [{firstName:"Linda", lastName:"Stephenson", ident:"332",isWorking
                {firstName:"Byron", lastName:"Read", ident:"194",isWorking:true, startTime:startTime9, firstBreak:"", secondBreak:"", thirdBreak:"",homeTime:"",currentBreak:"", totalHours:totalHourShift9}, 
                {firstName:"Marlon", lastName:"Hardy", ident:"112",isWorking:true, startTime:startTime10, firstBreak:"", secondBreak:"", thirdBreak:"",homeTime:"",currentBreak:"", totalHours:totalHourShift10}];
 
-
-//startTimes
-var startTime1 = new Date();startTime1.setHours(10,0,0);
-var startTime2 = new Date();startTime2.setHours(11,0,0);
-var startTime3 = new Date();startTime3.setHours(12,30,0);
-var startTime4 = new Date();startTime4.setHours(13,0,0);
-var startTime5 = new Date();startTime5.setHours(13,0,0);
-var startTime6 = new Date();startTime6.setHours(13,30,0);
-var startTime7 = new Date();startTime7.setHours(16,0,0);
-var startTime8 = new Date();startTime8.setHours(16,0,0);
-var startTime9 = new Date();startTime9.setHours(17,0,0);
-var startTime10 = new Date();startTime10.setHours(17,30,0);
 var totalHourShift1 = 8; 
 var totalHourShift2 = 8; 
 var totalHourShift3 = 8; var totalHourShift4 = 8; 
