@@ -1,6 +1,6 @@
 # Senior Roster
 
-[Preview application](www.hmbl.co.nz/seniorroster)
+[Preview application](http://www.hmbl.co.nz/seniorroster)
 
 This application is designed to work as a roster for any amount of staff at a business where staff members take breaks, and work on shift basis.
 I work at a supermarket and part of my job is to take care of the rostered staff, and issue their break times and home time. 
